@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ghiaur Lab at JHU | Cancer Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jhu: {
+                            blue: '#002D72',
+                            gold: '#A19261',
+                            grey: '#E5E5E5',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Header/Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-jhu-blue tracking-tight">The Ghiaur Lab <span
+                            class="font-light text-gray-500">at JHU</span></span>
+                </div>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#research"
+                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Research Areas</a>
+                    <a href="#publications"
+                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Publications</a>
+                    <a href="#team"
+                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Team</a>
+                    <a href="#contact"
+                        class="px-5 py-2 rounded-full bg-jhu-blue text-white font-semibold hover:bg-blue-900 transition duration-150 shadow-md">Contact</a>
+                </div>
+                <!-- Mobile menu button placeholder -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 h-[600px] flex items-center">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                alt="Microscopy cell biology" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-jhu-blue/90 to-transparent"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Targeting the <span class="text-jhu-gold">Bone Marrow Microenvironment</span> in Hematologic
+                    Malignancies
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light leading-relaxed">
+                    Our mission is to understand the role of the microenvironment in drug resistance and develop novel
+                    therapeutic strategies for leukemia and multiple myeloma.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#research"
+                        class="inline-flex justify-center items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-jhu-blue bg-white hover:bg-gray-100 transition duration-150 shadow-lg">
+                        Learn More
+                    </a>
+                    <a href="#publications"
+                        class="inline-flex justify-center items-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white/10 transition duration-150">
+                        View Publications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Lab -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-sm font-bold text-jhu-gold uppercase tracking-wider mb-2">About Our Lab</h2>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Bridging Clinical Care and Research</h3>
+                    <div class="prose prose-lg text-gray-600">
+                        <p class="mb-6">
+                            Dr. Gabriel Ghiaur is an Associate Professor of Oncology and a member of the Johns Hopkins
+                            Kimmel Cancer Center. As a physician-scientist, his primary interest lies in normal and
+                            malignant hematopoiesis, specifically investigating how the microenvironment contributes to
+                            cell extrinsic drug resistance and the persistence of minimal residual disease.
+                        </p>
+                        <p>
+                            His dual role as a laboratory-based investigator and clinician allows for unique
+                            translational potential in stem cell therapeutics, acute leukemia, and multiple myeloma. The
+                            lab combines advanced research with clinical insights to bridge the gap between molecular
+                            mechanisms and patient care.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-jhu-gold transform translate-x-4 translate-y-4 rounded-lg opacity-20">
+                    </div>
+                    <img src="lab_group.jpg" alt="Lab environment"
+                        class="relative rounded-lg shadow-xl w-full object-cover h-[400px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Research Areas -->
+    <section id="research" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-jhu-blue mb-4">Key Research Areas</h2>
+                <p class="max-w-2xl mx-auto text-xl text-gray-600">We focus on three interconnected pillars of cancer
+                    biology.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-blue">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Drug Resistance & Microenvironment</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Investigating the role of the bone marrow microenvironment in cell extrinsic drug resistance and
+                        the persistence of minimal residual disease.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-gold">
+                    <div class="w-14 h-14 bg-yellow-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hematopoiesis & Stem Cells</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Studying normal and malignant hematopoiesis to understand the fundamental biology of leukemia
+                        stem cells and their interaction with the niche.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-blue">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Translational Therapeutics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Developing novel therapeutic strategies for acute leukemia and multiple myeloma, with a focus on
+                        overcoming microenvironment-mediated protection.
+                    </p>
+                </div>
+
+                <!-- Card 4 (New) -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-gold">
+                    <div class="w-14 h-14 bg-yellow-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Clonal Hematopoiesis (CHIP)</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Investigating Clonal Hematopoiesis of Indeterminate Potential (CHIP) to understand its role in
+                        aging, inflammation, and leukemogenesis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Publications -->
+    <section id="publications" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 border-b pb-4">Selected Publications</h2>
+
+            <div class="space-y-8">
+                <!-- Pub New 1 -->
+                <div class="group">
+                    <h3 class="text-lg font-semibold text-jhu-blue group-hover:underline cursor-pointer">
+                        <a href="https://haematologica.org/article/view/12094" target="_blank">Comprehensive
+                            characterization of human bone marrow microenvironment shows age-related changes</a>
+                    </h3>
+                    <p class="text-gray-700 mt-1">
+                        Peters M, Teodorescu P, Pasca S, Zhang X, Wang R, Yegnasubramanian S, Grimes LH, Salomonis N,
+                        Gondek LP, <span class="font-medium">Ghiaur G</span>.
+                    </p>
+                    <p class="text-gray-500 text-sm italic mt-1">Haematologica. 2025.</p>
+                </div>
+
+                <!-- Pub New 2 -->
+                <div class="group">
+                    <h3 class="text-lg font-semibold text-jhu-blue group-hover:underline cursor-pointer">
+                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12336997/" target="_blank">Arsenic trioxide
+                            for reprogramming the bone marrow microenvironment to eliminate acute myeloid leukemia
+                            blasts</a>
+                    </h3>
+                    <p class="text-gray-700 mt-1">
+                        Kegyes D, Teodorescu P, Supeanu T, Nagai Y, Zhong G, Mathews V, Isoherranen N, <span
+                            class="font-medium">Ghiaur G</span>.
+                    </p>
+                    <p class="text-gray-500 text-sm italic mt-1">HemaSphere. 2025.</p>
+                </div>
+
+                <!-- Pub 1 -->
+                <div class="group">
+                    <h3 class="text-lg font-semibold text-jhu-blue group-hover:underline cursor-pointer">
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/28673395/" target="_blank">Mechanisms of Resistance to
+                            FLT3 Inhibitors and the Role of the Bone Marrow Microenvironment</a>
+                    </h3>
+                    <p class="text-gray-700 mt-1">
+                        <span class="font-medium">Ghiaur G</span>, Levis M.
+                    </p>
+                    <p class="text-gray-500 text-sm italic mt-1">Hematol Oncol Clin North Am. 2017 Aug;31(4):681-692.
+                    </p>
+                </div>
+
+                <!-- Pub 2 -->
+                <div class="group">
+                    <h3 class="text-lg font-semibold text-jhu-blue group-hover:underline cursor-pointer">
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/24043786/" target="_blank">Regulation of Hematopoietic
+                            Stem Cell Self-Renewal by the Microenvironment’s Control of Retinoic Acid Signaling</a>
+                    </h3>
+                    <p class="text-gray-700 mt-1">
+                        <span class="font-medium">Ghiaur G</span>, Yegnasubramanian S, Perkins B, Gucwa J, Gerber J, and
+                        Jones RJ.
+                    </p>
+                    <p class="text-gray-500 text-sm italic mt-1">PNAS, 2013, Oct 1; 110(40):16121-6.</p>
+                </div>
+
+                <!-- Pub 3 -->
+                <div class="group">
+                    <h3 class="text-lg font-semibold text-jhu-blue group-hover:underline cursor-pointer">
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/27775549/" target="_blank">Hedgehog and retinoid
+                            signaling alters multiple myeloma microenvironment and generates bortezomib resistance</a>
+                    </h3>
+                    <p class="text-gray-700 mt-1">
+                        Alonso S, Hernandez D, Chang YT, Gocke CD, McCray M, Varadhan R, Matsui WH, Jones RJ, <span
+                            class="font-medium">Ghiaur G</span>.
+                    </p>
+                    <p class="text-gray-500 text-sm italic mt-1">J Clin Invest. 2016 Dec 1;126(12):4460-4468.</p>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <a href="#" class="text-jhu-blue font-semibold hover:text-blue-800 flex items-center">
+                    View all publications on PubMed
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-jhu-blue mb-4">Our Team</h2>
+                <p class="max-w-2xl mx-auto text-xl text-gray-600">Meet the researchers behind our work.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- PI -->
+                <div class="text-center">
+                    <div class="relative w-48 h-48 mx-auto mb-6">
+                        <img src="gabriel_ghiaur.png" alt="Gabriel Ghiaur"
+                            class="w-full h-full object-cover rounded-full shadow-lg border-4 border-white">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Gabriel Ghiaur, MD, PhD</h3>
+                    <p class="text-jhu-blue font-medium mb-2">Principal Investigator</p>
+                    <p class="text-gray-500 text-sm">Associate Professor of Oncology</p>
+                </div>
+
+                <!-- Member 1 -->
+                <div class="text-center">
+                    <div class="relative w-48 h-48 mx-auto mb-6">
+                        <img src="mareike_peters.png" alt="Mareike Peters"
+                            class="w-full h-full object-cover rounded-full shadow-lg border-4 border-white">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Mareike Peters, MD</h3>
+                    <p class="text-jhu-blue font-medium mb-2">Postdoctoral Fellow</p>
+                    <p class="text-gray-500 text-sm">Cancer Metabolism & CHIP</p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="text-center">
+                    <div class="relative w-48 h-48 mx-auto mb-6">
+                        <img src="teodora_supeanu.png" alt="Teodora Supeanu"
+                            class="w-full h-full object-cover rounded-full shadow-lg border-4 border-white">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Teodora Supeanu, PhD, DVM</h3>
+                    <p class="text-jhu-blue font-medium mb-2">Postdoctoral Fellow</p>
+                    <p class="text-gray-500 text-sm">Cell Biology</p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="text-center">
+                    <div class="relative w-48 h-48 mx-auto mb-6">
+                        <img src="lovisha_aggarwal.png" alt="Lovisha Aggarwal"
+                            class="w-full h-full object-cover rounded-full shadow-lg border-4 border-white">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Lovisha Aggarwal, MS</h3>
+                    <p class="text-jhu-blue font-medium mb-2">Research Specialist</p>
+                    <p class="text-gray-500 text-sm">Drug resistance and Acute Myeloid Leukemia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section id="join" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-jhu-blue mb-6">Join Our Team</h2>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                We are always looking for motivated postdocs, graduate students, and research specialists to join our
+                lab. If you are interested in our research on the bone marrow microenvironment and hematologic
+                malignancies, please get in touch.
+            </p>
+            <a href="mailto:contact@ghiaurlab.jhu.edu"
+                class="inline-flex justify-center items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-jhu-blue hover:bg-blue-900 transition duration-150 shadow-lg">
+                Apply Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-jhu-blue text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-jhu-gold">The Ghiaur Lab</h3>
+                    <p class="text-gray-300">
+                        Johns Hopkins University<br>
+                        School of Medicine<br>
+                        733 N. Broadway<br>
+                        Baltimore, MD 21205
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-300">
+                        Email: <a href="mailto:contact@ghiaurlab.jhu.edu"
+                            class="hover:text-white underline decoration-jhu-gold">contact@ghiaurlab.jhu.edu</a><br>
+                        Phone: (410) 555-0123
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Affiliations</h3>
+                    <p class="text-gray-300 text-sm">
+                        Department of Cell Biology<br>
+                        Sidney Kimmel Comprehensive Cancer Center<br>
+                        Johns Hopkins Medicine
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">&copy; 2024 The Ghiaur Lab. All rights reserved.</p>
+                <p class="text-sm text-gray-400 mt-2 md:mt-0">Designed for Science.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
