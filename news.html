@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ghiaur Lab at JHU | Cancer Research</title>
+    <title>News | The Ghiaur Lab at JHU</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -39,11 +39,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-bold text-jhu-blue tracking-tight">The Ghiaur Lab <span
-                            class="font-light text-gray-500">at JHU</span></span>
+                    <a href="index.html" class="text-2xl font-bold text-jhu-blue tracking-tight">The Ghiaur Lab <span
+                            class="font-light text-gray-500">at JHU</span></a>
                 </div>
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="index.html" class="text-jhu-blue font-bold transition duration-150">Home</a>
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Home</a>
                     <a href="research.html"
                         class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Research</a>
                     <a href="team.html"
@@ -52,8 +53,7 @@
                         class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Publications</a>
                     <a href="support.html"
                         class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Support</a>
-                    <a href="news.html"
-                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">News</a>
+                    <a href="news.html" class="text-jhu-blue font-bold transition duration-150">News</a>
                     <a href="#contact"
                         class="px-5 py-2 rounded-full bg-jhu-blue text-white font-semibold hover:bg-blue-900 transition duration-150 shadow-md">Contact</a>
                 </div>
@@ -74,7 +74,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-jhu-blue bg-gray-50">Home</a>
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">Home</a>
                 <a href="research.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">Research</a>
                 <a href="team.html"
@@ -84,52 +84,26 @@
                 <a href="support.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">Support</a>
                 <a href="news.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">News</a>
+                    class="block px-3 py-2 rounded-md text-base font-medium text-jhu-blue bg-gray-50">News</a>
                 <a href="#contact"
                     class="block px-3 py-2 rounded-md text-base font-medium text-jhu-blue hover:bg-gray-50">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-gray-900 flex items-center justify-center">
-        <!-- Background Video -->
-        <div class="w-full">
-            <video autoplay loop muted playsinline class="w-full h-auto">
-                <source src="Presentation2-1-4K.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
-    <!-- About the Lab -->
-    <section id="about" class="py-20 bg-white">
+    <!-- News Section -->
+    <section id="news" class="py-20 bg-white min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <div class="mb-12 lg:mb-0">
-                    <h2 class="text-sm font-bold text-jhu-gold uppercase tracking-wider mb-2">About Our Lab</h2>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Bridging Clinical Care and Research</h3>
-                    <div class="prose prose-lg text-gray-600">
-                        <p class="mb-6">
-                            Dr. Gabriel Ghiaur is an Associate Professor of Oncology and a member of the Johns Hopkins
-                            Kimmel Cancer Center. As a physician-scientist, his primary interest lies in normal and
-                            malignant hematopoiesis, specifically investigating how the microenvironment contributes to
-                            cell extrinsic drug resistance and the persistence of minimal residual disease.
-                        </p>
-                        <p>
-                            His dual role as a laboratory-based investigator and clinician allows for unique
-                            translational potential in stem cell therapeutics, acute leukemia, and multiple myeloma. The
-                            lab combines advanced research with clinical insights to bridge the gap between molecular
-                            mechanisms and patient care.
-                        </p>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div
-                        class="absolute inset-0 bg-jhu-gold transform translate-x-4 translate-y-4 rounded-lg opacity-20">
-                    </div>
-                    <img src="lab_group.jpg" alt="Lab environment"
-                        class="relative rounded-lg shadow-xl w-full object-cover h-[400px]">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-jhu-blue mb-4">Latest News</h2>
+                <p class="max-w-2xl mx-auto text-xl text-gray-600">Updates from the Ghiaur Lab.</p>
+            </div>
+            <!-- Content placeholder -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="text-gray-500 text-sm mb-2">Coming Soon</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">News updates coming soon</h3>
+                    <p class="text-gray-600">Stay tuned for the latest announcements and publications.</p>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ghiaur Lab at JHU | Cancer Research</title>
+    <title>Research | The Ghiaur Lab at JHU</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -39,13 +39,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-bold text-jhu-blue tracking-tight">The Ghiaur Lab <span
-                            class="font-light text-gray-500">at JHU</span></span>
+                    <a href="index.html" class="text-2xl font-bold text-jhu-blue tracking-tight">The Ghiaur Lab <span
+                            class="font-light text-gray-500">at JHU</span></a>
                 </div>
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="index.html" class="text-jhu-blue font-bold transition duration-150">Home</a>
-                    <a href="research.html"
-                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Research</a>
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Home</a>
+                    <a href="research.html" class="text-jhu-blue font-bold transition duration-150">Research</a>
                     <a href="team.html"
                         class="text-gray-700 hover:text-jhu-blue font-medium transition duration-150">Team</a>
                     <a href="publications.html"
@@ -74,9 +74,9 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="index.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-jhu-blue bg-gray-50">Home</a>
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">Home</a>
                 <a href="research.html"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">Research</a>
+                    class="block px-3 py-2 rounded-md text-base font-medium text-jhu-blue bg-gray-50">Research</a>
                 <a href="team.html"
                     class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-jhu-blue hover:bg-gray-50">Team</a>
                 <a href="publications.html"
@@ -91,45 +91,81 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative bg-gray-900 flex items-center justify-center">
-        <!-- Background Video -->
-        <div class="w-full">
-            <video autoplay loop muted playsinline class="w-full h-auto">
-                <source src="Presentation2-1-4K.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
-    <!-- About the Lab -->
-    <section id="about" class="py-20 bg-white">
+    <!-- Key Research Areas -->
+    <section id="research" class="py-20 bg-gray-50 min-h-screen">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <div class="mb-12 lg:mb-0">
-                    <h2 class="text-sm font-bold text-jhu-gold uppercase tracking-wider mb-2">About Our Lab</h2>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Bridging Clinical Care and Research</h3>
-                    <div class="prose prose-lg text-gray-600">
-                        <p class="mb-6">
-                            Dr. Gabriel Ghiaur is an Associate Professor of Oncology and a member of the Johns Hopkins
-                            Kimmel Cancer Center. As a physician-scientist, his primary interest lies in normal and
-                            malignant hematopoiesis, specifically investigating how the microenvironment contributes to
-                            cell extrinsic drug resistance and the persistence of minimal residual disease.
-                        </p>
-                        <p>
-                            His dual role as a laboratory-based investigator and clinician allows for unique
-                            translational potential in stem cell therapeutics, acute leukemia, and multiple myeloma. The
-                            lab combines advanced research with clinical insights to bridge the gap between molecular
-                            mechanisms and patient care.
-                        </p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-jhu-blue mb-4">Key Research Areas</h2>
+                <p class="max-w-2xl mx-auto text-xl text-gray-600">We focus on three interconnected pillars of cancer
+                    biology.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-blue">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
                     </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Drug Resistance & Microenvironment</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Investigating the role of the bone marrow microenvironment in cell extrinsic drug resistance and
+                        the persistence of minimal residual disease.
+                    </p>
                 </div>
-                <div class="relative">
-                    <div
-                        class="absolute inset-0 bg-jhu-gold transform translate-x-4 translate-y-4 rounded-lg opacity-20">
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-gold">
+                    <div class="w-14 h-14 bg-yellow-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
                     </div>
-                    <img src="lab_group.jpg" alt="Lab environment"
-                        class="relative rounded-lg shadow-xl w-full object-cover h-[400px]">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hematopoiesis & Stem Cells</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Studying normal and malignant hematopoiesis to understand the fundamental biology of leukemia
+                        stem cells and their interaction with the niche.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-blue">
+                    <div class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Translational Therapeutics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Developing novel therapeutic strategies for acute leukemia and multiple myeloma, with a focus on
+                        overcoming microenvironment-mediated protection.
+                    </p>
+                </div>
+
+                <!-- Card 4 (New) -->
+                <div
+                    class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 border-t-4 border-jhu-gold">
+                    <div class="w-14 h-14 bg-yellow-50 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-jhu-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Clonal Hematopoiesis (CHIP)</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Investigating Clonal Hematopoiesis of Indeterminate Potential (CHIP) to understand its role in
+                        aging, inflammation, and leukemogenesis.
+                    </p>
                 </div>
             </div>
         </div>
