@@ -92,7 +92,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative flex items-center min-h-[600px] overflow-hidden bg-[#072e50] py-12 md:py-10">
+    <section id="home" class="relative flex items-center min-h-[600px] overflow-hidden bg-[#0a2a47] py-12 md:py-10">
 
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -119,12 +119,13 @@
                     </div>
                 </div>
 
-                <!-- Right Column / Video (Relative on mobile, Absolute on Desktop) -->
-                <div class="relative w-full h-[500px] lg:absolute lg:right-0 lg:top-20 lg:w-[60%] lg:flex lg:justify-end lg:items-center pointer-events-none"
-                    style="-webkit-mask-image: linear-gradient(to right, transparent, black 15%); mask-image: linear-gradient(to right, transparent, black 15%);">
+                <!-- Right Column / Video with transparent background -->
+                <div
+                    class="relative w-full h-[500px] lg:absolute lg:right-0 lg:top-20 lg:w-[60%] lg:flex lg:justify-end lg:items-center pointer-events-none">
                     <div class="w-full h-full relative">
                         <video autoplay loop muted playsinline
                             class="w-full h-full object-contain object-center lg:object-center">
+                            <source src="4K_transparent.webm" type="video/webm">
                             <source src="4K blue background.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
